@@ -19,6 +19,64 @@ The program will have four main classes : Vehicle, Car, Car Database and CarSyst
 2.	Car Class  the car will inherit from Vehicle class. This class will store additional information about each car, such as its engine size, fuel type, transmission, mileage, condition, and price. 
 3.	CarDatabase class  The CarDatabase class will manage the car records. It will read the CSV files and store the information in a vector. It will then allow users to search of cars by brand or car ID. 
 4.	CarSystem class  the CarSystem class will control the main program. It will display the menu and allow the user to select different options.
+
+## UML Diagram
+```mermaid
+classDiagram
+
+    class Vehicle {
+        -brand: string
+        -model: string
+        -year: int
+        +Vehicle()
+        +Vehicle(b, m, y)
+        +getBrand() string
+        +getModel() string
+        +getYear() int
+        +displayDetails() void
+    }
+
+    class Car {
+        -carID: int
+        -engineSize: double
+        -fuelType: string
+        -transmission: string
+        -mileage: int
+        -condition: string
+        -price: double
+        +Car()
+        +Car(id, b, m, y, e, f, t, mi, c, p)
+        +getCarID() int
+        +getEngineSize() double
+        +getFuelType() string
+        +getTransmission() string
+        +getMileage() int
+        +getCondition() string
+        +getPrice() double
+        +displayDetails() void
+    }
+
+    class CarDatabase {
+        -cars: vector~Car~
+        +CarDatabase()
+        +loadCars() bool
+        +searchByBrand(brand) vector~Car~
+        +findCarByID(id) Car*
+        +displayCars() void
+    }
+
+    class CarSystem {
+        -database: CarDatabase
+        +CarSystem()
+        +menu() void
+        +start() void
+        +searchCar() void
+    }
+
+    Vehicle <|-- Car
+    CarDatabase o-- Car
+    CarSystem *-- CarDatabase
+```
 ## Anticipated Use Cases
 This program will have four main use cases.
 1.	Case 1: Search for a car  this will select the search option from the main menu. The program will ask the user to enter car brand, such as Toyota, Honda etc. 
