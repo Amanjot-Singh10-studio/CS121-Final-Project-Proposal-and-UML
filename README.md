@@ -1,9 +1,9 @@
 # CS121-Final-Project-Proposal-and-UML
 
-# Final Project Proposal
-# Car Information Search System 
-# Amanjot Singh 
-# CS121
+ Final Project Proposal
+ Car Information Search System 
+ Amanjot Singh 
+ CS121
  
 ## Purpose
 My purpose of this project is to create car information search system using C++. In this project I will demonstrate my understanding what I have learned this semester in CS121, which include object-oriented programming, classes, inheritance, and data structures. 
