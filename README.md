@@ -33,17 +33,19 @@ Abstraction  each class will have its own responsibility. For example, CarDat
 ## Data Structures
 The program will use a vector to store the car information. Each car will be sorted as a car object inside the vector. The CarDatabase will manage the vector and search through the records. I will use a vector because it stores multiple objects and makes it easy to search through the car records. The information will come from csv dataset. The program will read the file when it starts. The data will remain saved in the CSV file, and the program will not change the original records. 
 ## Technology and Implementation
+Technology and Implementation
 I will use C++ to make this project. The program will run in the GitHub terminal.
 I will plan to use: 
-•	C++ classes and object 
-•	Constructors and methods 
-•	Inheritance 
-•	Encapsulation 
-•	Polymorphism 
-•	Vectors 
-•	File Handling 
-•	Loops
-•	If Statement 
+1.	C++ classes and object 
+2.	Constructors and methods 
+3.	Inheritance 
+4.	Encapsulation 
+5.	Polymorphism 
+6.	Vectors 
+7.	File Handling 
+8.	Loops
+9.	If Statement 
+ 
 ## Milestones
 1.	Proposal and UML approval 
 2.	Review CSV dataset.
