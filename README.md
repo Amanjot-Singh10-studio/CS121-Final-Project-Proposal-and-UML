@@ -116,4 +116,3 @@ I will use C++ to make this project. The program will run in the GitHub terminal
 ## Milestones
 1.	Proposal and UML approval 
 2.	Review CSV dataset.
-
